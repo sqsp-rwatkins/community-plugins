@@ -21,3 +21,9 @@
  */
 
 export { searchModuleAnnouncementsCollator as default } from './module';
+
+export { AnnouncementCollatorFactory } from './collators/AnnouncementCollatorFactory';
+export type {
+  IndexableAnnouncementDocument,
+  AnnouncementCollatorOptions,
+} from './collators/AnnouncementCollatorFactory';

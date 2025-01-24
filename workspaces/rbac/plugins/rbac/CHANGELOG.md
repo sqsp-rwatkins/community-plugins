@@ -1,5 +1,20 @@
 ### Dependencies
 
+## 1.33.6
+
+### Patch Changes
+
+- 5b19b0d: Update documentation information about `pluginsWithPermission` setting. In order for the RBAC UI to display available permissions provided by installed plugins, this setting needs to be configured.
+
+## 1.33.5
+
+### Patch Changes
+
+- 0f5c451: Updated dependency `prettier` to `3.4.2`.
+- 064b809: Updated dependency `start-server-and-test` to `2.0.9`.
+- 18f9d9d: Updated dependency `@types/node` to `18.19.68`.
+- 4eef4d1: Updated dependency `@playwright/test` to `1.49.1`.
+
 ## 1.33.4
 
 ### Patch Changes

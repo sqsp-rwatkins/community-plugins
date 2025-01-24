@@ -1,5 +1,32 @@
 ### Dependencies
 
+## 5.3.0
+
+### Minor Changes
+
+- 53daff0: Roles and permissions were not correctly applied for users and groups with names containing uppercase letters. To address this issue, we now convert user and group references in all user inputs to lowercase. This change migrates `v0` column in `casbin_rule` table in `backstage_plugin_permission` database. Conditions containing claims with uppercase letters are not resolved yet.
+
+## 5.2.10
+
+### Patch Changes
+
+- ba4b3e9: Use loadPolicy to keep the enforcer in sync for edit operations. It should keep the RBAC plugin in sync when the Backstage instance is scaled to multiple deployment replicas. Reuse the maximum database pool size value from the application configuration in the RBAC Casbin adapter.
+
+## 5.2.9
+
+### Patch Changes
+
+- 5b19b0d: Update documentation information about `pluginsWithPermission` setting. In order for the RBAC UI to display available permissions provided by installed plugins, this setting needs to be configured.
+
+## 5.2.8
+
+### Patch Changes
+
+- 0f5c451: Updated dependency `prettier` to `3.4.2`.
+- 18f9d9d: Updated dependency `@types/node` to `18.19.68`.
+- Updated dependencies [0f5c451]
+  - @backstage-community/plugin-rbac-node@1.8.4
+
 ## 5.2.7
 
 ### Patch Changes

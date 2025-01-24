@@ -8,16 +8,17 @@
 import { ApiRef } from '@backstage/core-plugin-api';
 import { BackstagePlugin } from '@backstage/core-plugin-api';
 import { BulkCheckResponse } from '@backstage-community/plugin-tech-insights-common';
-import { Check as Check_2 } from '@backstage-community/plugin-tech-insights-common/client';
+import { Check as Check_2 } from '@backstage-community/plugin-tech-insights-common';
 import { CheckLink } from '@backstage-community/plugin-tech-insights-common';
 import { CheckResult } from '@backstage-community/plugin-tech-insights-common';
 import { CompoundEntityRef } from '@backstage/catalog-model';
 import { DiscoveryApi } from '@backstage/core-plugin-api';
 import { ElementType } from 'react';
 import { Entity } from '@backstage/catalog-model';
+import { Entity as Entity_2 } from '@backstage/catalog-model/index';
 import { FactSchema } from '@backstage-community/plugin-tech-insights-common';
 import { IdentityApi } from '@backstage/core-plugin-api';
-import { InsightFacts as InsightFacts_2 } from '@backstage-community/plugin-tech-insights-common/client';
+import { InsightFacts as InsightFacts_2 } from '@backstage-community/plugin-tech-insights-common';
 import { JsonValue } from '@backstage/types';
 import { JSX as JSX_2 } from 'react';
 import { MouseEventHandler } from 'react';
@@ -101,7 +102,7 @@ export type ResultLinksMenuInfo = {
 export const ScorecardInfo: (props: {
   checkResults: CheckResult[];
   title: ReactNode;
-  entity: Entity;
+  entity: Entity_2;
   description?: string | undefined;
   noWarning?: boolean | undefined;
   expanded?: boolean | undefined;
@@ -110,7 +111,7 @@ export const ScorecardInfo: (props: {
 // @public (undocumented)
 export const ScorecardsList: (props: {
   checkResults: CheckResult[];
-  entity?: Entity | undefined;
+  entity?: Entity_2 | undefined;
 }) => JSX_2.Element;
 
 // @public
@@ -184,7 +185,7 @@ export class TechInsightsClient
 export const TechInsightsLinksMenu: (
   props: PropsWithChildren<{
     result: CheckResult;
-    entity?: Entity | undefined;
+    entity?: Entity_2 | undefined;
     setMenu(opener: ResultLinksMenuInfo | undefined): void;
   }>,
 ) => JSX_2.Element | null;

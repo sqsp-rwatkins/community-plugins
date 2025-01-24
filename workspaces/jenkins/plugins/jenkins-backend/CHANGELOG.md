@@ -1,5 +1,22 @@
 # @backstage-community/plugin-jenkins-backend
 
+## 0.9.0
+
+### Minor Changes
+
+- 92a0ff6: feature: allow support for defining multiple projects/job names
+
+## 0.8.0
+
+### Minor Changes
+
+- 9527e9e: Backstage version bump to v1.34.1
+
+### Patch Changes
+
+- Updated dependencies [9527e9e]
+  - @backstage-community/plugin-jenkins-common@0.2.0
+
 ## 0.7.0
 
 ### Minor Changes

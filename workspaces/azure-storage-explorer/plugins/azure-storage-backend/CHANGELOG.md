@@ -1,5 +1,17 @@
 # @backstage-community/plugin-azure-storage-explorer-backend
 
+## 0.1.1
+
+### Patch Changes
+
+- f89bb9f: remove unused dependencies: node-fetch and yn
+
+## 0.1.0
+
+### Minor Changes
+
+- 03cc9df: Backstage version bump to v1.34.1
+
 ## 0.0.10
 
 ### Patch Changes
